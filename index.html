@@ -1,268 +1,555 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CML Balanças – Pesando com responsabilidade desde 2010</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <!-- Cabeçalho e navegação -->
-    <header class="header">
-        <div class="container nav-bar">
-            <a href="#" class="logo" aria-label="Página inicial">
-                <img src="logo.png" alt="Logo CML Balanças" />
-            </a>
-            <nav class="navigation" aria-label="Navegação principal">
-                <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#marcas">Marcas</a></li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li><a href="#segmentos">Segmentos</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
-        </div>
-    </header>
+/* VariÃ¡veis de cor para facilitar ajustes */
+:root {
+    --primary: #0a3f87;
+    --secondary: #0e4fa5;
+    --accent: #0077c5;
+    --dark: #0c2740;
+    --light: #f4f7fb;
+    --whatsapp: #25d366;
+}
 
-    <!-- Seção hero com imagem de fundo -->
-    <section class="hero" role="banner">
-        <div class="hero-overlay">
-            <h1>CML BALANÇAS – Pesando com responsabilidade desde 2010</h1>
-            <p>Soluções em pesagem com excelência técnica para varejo, indústria e agronegócio.</p>
-            <a href="#orcamento" class="btn-primary">Solicite um orçamento</a>
-        </div>
-    </section>
+/* Reset bÃ¡sico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Seção de serviços -->
-    <section id="servicos" class="section services">
-        <div class="container">
-            <div class="services-content">
-                <div class="services-text">
-                    <h2>O que oferecemos</h2>
-                    <p>A CML Balanças é especialista em venda, assistência técnica e calibração de balanças multimarcas, atuando com máxima precisão e atendimento personalizado. Nossa equipe está preparada para atender desde pequenos comércios até grandes indústrias e operações de pesagem rodoviária.</p>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <h3>Venda de balanças multimarcas</h3>
-                            <p>Gancho, plataforma, rodoviária, precisão, cozinha e mais.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Assistência técnica especializada</h3>
-                            <p>Atuamos em todos os modelos de balanças com serviço rápido e confiável.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Calibração e aferição</h3>
-                            <p>Laudos técnicos emitidos de acordo com padrões de qualidade.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Manutenção preventiva e corretiva</h3>
-                            <p>Para garantir a performance constante do seu equipamento.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Venda de etiquetas e etiquetadoras</h3>
-                            <p>Etiquetas personalizadas e modelos Elgin e Triunfo.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Automação de pesagem</h3>
-                            <p>Integração de sistemas para otimizar processos industriais.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Atendimento externo</h3>
-                            <p>Vamos até empresas, galpões, indústrias e propriedades rurais.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Peças e acessórios originais</h3>
-                            <p>Venda de componentes certificados com garantia de durabilidade.</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Assistência autorizada Triunfo</h3>
-                            <p>Suporte oficial para equipamentos Triunfo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-image">
-                    <img src="new_gallery6.jpg" alt="Equipamento de balança representando nossos serviços" />
-                </div>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+}
 
-    <!-- Seção de marcas -->
-    <section id="marcas" class="section brands">
-        <div class="container">
-            <h2>Marcas com que trabalhamos</h2>
-            <p>Somos assistência técnica autorizada Triunfo e trabalhamos também com diversas outras marcas líderes de mercado. Todas as peças utilizadas são originais para garantir qualidade e durabilidade.</p>
-            <ul class="brand-list" aria-label="Lista de marcas">
-                <li>Toledo</li>
-                <li>Elgin</li>
-                <li>Filizola</li>
-                <li>Triunfo</li>
-                <li>Urano</li>
-                <li>Prix</li>
-                <li>Marte</li>
-                <li>Balmak</li>
-                <li>Welmy</li>
-                <li>e outras</li>
-            </ul>
-        </div>
-    </section>
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-    <!-- Seção de diferenciais -->
-    <section id="diferenciais" class="section differentials">
-        <div class="container">
-            <h2>Diferenciais da CML Balanças</h2>
-            <ul class="differential-list" aria-label="Lista de diferenciais">
-                <li>🔧 Equipe técnica própria e altamente qualificada</li>
-                <li>🧠 15 anos de experiência no setor</li>
-                <li>🛠️ Soluções rápidas, personalizadas e com laudo técnico</li>
-                <li>🚐 Atendimento externo com deslocamento até o cliente</li>
-                <li>💬 Suporte humanizado e contínuo</li>
-                <li>🔒 Compromisso com a precisão, segurança e funcionamento dos equipamentos</li>
-                <li>📦 Estoque próprio de peças e etiquetas</li>
-            </ul>
-        </div>
-    </section>
+img {
+    max-width: 100%;
+    display: block;
+}
 
-    <!-- Seção de segmentos -->
-    <section id="segmentos" class="section segments">
-        <div class="container">
-            <h2>Atendemos diversos segmentos</h2>
-            <div class="segment-grid">
-                <div class="segment-item">
-                    <span class="emoji">🏗️</span>
-                    <p>Concreteiras e construtoras</p>
-                </div>
-                <div class="segment-item">
-                    <span class="emoji">🚛</span>
-                    <p>Transportadoras e pesagem rodoviária</p>
-                </div>
-                <div class="segment-item">
-                    <span class="emoji">🧱</span>
-                    <p>Indústrias de transformação e produção</p>
-                </div>
-                <div class="segment-item">
-                    <span class="emoji">🛒</span>
-                    <p>Supermercados, atacarejos e comércio em geral</p>
-                </div>
-                <div class="segment-item">
-                    <span class="emoji">🐖</span>
-                    <p>Frigoríficos e agroindústrias</p>
-                </div>
-                <div class="segment-item">
-                    <span class="emoji">🐄</span>
-                    <p>Fazendas, granjas e áreas rurais</p>
-                </div>
-            </div>
-            <p class="tagline">Onde cada grama conta, a CML entrega confiança.</p>
-        </div>
-    </section>
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    <!-- Seção de galeria -->
-    <section id="galeria" class="section gallery">
-        <div class="container">
-            <h2>Galeria de produtos e serviços</h2>
-            <div class="gallery-grid">
-                <!-- Galeria atualizada com fotos reais dos produtos e serviços -->
-                <div class="gallery-item">
-                    <img src="new_gallery6.jpg" alt="Balança Prix com teclado e display" />
-                    <p>Balança Prix com teclado e display</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="new_gallery2.jpg" alt="Indicador universal para balanças DIGI‑TRON" />
-                    <p>Indicador universal para balanças</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="new_gallery1.jpg" alt="Etiquetadora MX 5500 e caixas Fixxar" />
-                    <p>Etiquetadora e caixas Fixxar MX 5500</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="new_gallery3.jpg" alt="Estoque com caixas Balmak e acessórios" />
-                    <p>Estoque variado</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="new_gallery4.jpg" alt="Rolos de etiquetas e balança Prix em operação" />
-                    <p>Rolos de etiquetas em balança Prix</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="new_gallery5.jpg" alt="Etiquetas personalizadas para Merc. &amp; Açougue Fernandes" />
-                    <p>Etiquetas personalizadas em rolo</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* NavegaÃ§Ã£o */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.6em 0;
+}
 
-    <!-- Seção de depoimentos -->
-    <section id="depoimentos" class="section testimonials">
-        <div class="container">
-            <h2>O que dizem nossos clientes</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial">
-                    <p>“Técnicos atenciosos, serviço rápido e com ótimo custo-benefício. Recomendo demais.”</p>
-                    <span class="author">— José Roberto, supermercado de bairro</span>
-                </div>
-                <div class="testimonial">
-                    <p>“Já precisei da equipe da CML em cima da hora e eles me atenderam com excelência. Salvou minha linha de produção!”</p>
-                    <span class="author">— Patrícia, gerente de indústria alimentícia</span>
-                </div>
-                <div class="testimonial">
-                    <p>“Confio na CML porque sei que qualquer balança que sair de lá está pronta pra trabalhar.”</p>
-                    <span class="author">— Carlos, dono de oficina de caminhões</span>
-                </div>
-            </div>
-        </div>
-    </section>
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    <!-- Seção de contato -->
-    <section id="contato" class="section contact">
-        <div class="container contact-flex">
-            <div class="contact-info">
-                <h2>Fale com a CML Balanças</h2>
-                <p>Entre em contato conosco para solicitar um orçamento ou tirar dúvidas.</p>
-                <ul>
-                    <li><strong>WhatsApp / Telefone:</strong> (92) 99194‑4425</li>
-                    <li><strong>E‑mail:</strong> <a href="mailto:cml.cesar@uol.com.br">cml.cesar@uol.com.br</a></li>
-                    <li><strong>Endereço físico:</strong> Av. Autaz Mirim, 99 – São José Operário, Manaus – AM, 69085‑000</li>
-                    <li><a href="https://www.google.com/maps/place/Av.+Autaz+Mirim,+99+-+S%C3%A3o+Jos%C3%A9+Oper%C3%A1rio,+Manaus" target="_blank" rel="noopener" class="link-map">Ver no Google Maps</a></li>
-                </ul>
-                <!-- Botão de WhatsApp com link direto -->
-                <a href="https://wa.me/5592991944425" target="_blank" rel="noopener" class="btn-secondary">Chamar no WhatsApp agora</a>
-                <p class="cta-warning">⚠️ Não espere a balança falhar para agir! Evite prejuízos, multas e retrabalho. Faça manutenção preventiva e conte com uma equipe que entende do assunto.</p>
-            </div>
-            <div class="contact-form-wrapper">
-                <h3>Solicite um orçamento personalizado agora mesmo</h3>
-                <form id="orcamento">
-                    <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" required />
-                    <label for="empresa">Empresa (opcional)</label>
-                    <input type="text" id="empresa" name="empresa" />
-                    <label for="email">E‑mail</label>
-                    <input type="email" id="email" name="email" required />
-                    <label for="whatsapp">WhatsApp</label>
-                    <input type="tel" id="whatsapp" name="whatsapp" required />
-                    <div class="service-options">
-                        <span>Tipo de serviço desejado</span>
-                        <label><input type="radio" name="servico" value="Compra de balança" /> Compra de balança</label>
-                        <label><input type="radio" name="servico" value="Assistência técnica" /> Assistência técnica</label>
-                        <label><input type="radio" name="servico" value="Calibração" /> Calibração</label>
-                        <label><input type="radio" name="servico" value="Etiquetas personalizadas" /> Etiquetas personalizadas</label>
-                        <label><input type="radio" name="servico" value="Outros" /> Outros</label>
-                    </div>
-                    <label for="mensagem">Mensagem ou detalhes do serviço</label>
-                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-                    <button type="submit" class="btn-primary">Quero um orçamento</button>
-                </form>
-            </div>
-        </div>
-    </section>
+.nav-bar .logo img {
+    height: 60px;
+}
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 CML Balanças. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-</body>
-</html>
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    font-weight: 500;
+    padding: 0.5em;
+    transition: color 0.2s ease;
+    color: var(--dark);
+}
+
+.navigation a:hover {
+    color: var(--primary);
+}
+
+/* BotÃµes */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+}
+
+.btn-secondary {
+    background-color: var(--whatsapp);
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #1ebe5d;
+}
+
+/* SeÃ§Ã£o Hero */
+.hero {
+    position: relative;
+    background-image: url('hero.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 60vh;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 2.4em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin-bottom: 1em;
+}
+
+/* Estrutura geral das seÃ§Ãµes */
+.section {
+    padding: 4em 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: var(--primary);
+}
+
+/* ServiÃ§os */
+.services p {
+    margin-bottom: 2em;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5em;
+}
+
+/* Layout aprimorado para a seÃ§Ã£o de serviÃ§os */
+.services {
+    background-color: #f8fbff;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+}
+
+.services-text {
+    flex: 1 1 450px;
+}
+
+.services-image {
+    flex: 1 1 300px;
+}
+
+.services-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .services-content {
+        flex-direction: column;
+    }
+    .services-image {
+        order: -1;
+        margin-bottom: 1.5em;
+    }
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: var(--secondary);
+}
+
+.service-card p {
+    font-size: 0.95em;
+    color: var(--dark);
+}
+
+/* Marcas */
+.brands p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 1em auto;
+}
+
+.brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75em;
+    list-style: none;
+}
+
+.brand-list li {
+    font-weight: 600;
+    background-color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-size: 0.95em;
+}
+
+/* Diferenciais */
+.differential-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0.8em;
+    margin-top: 1em;
+}
+
+.differential-list li {
+    background-color: #ffffff;
+    padding: 1em 1.5em;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.95em;
+}
+
+/* Segmentos */
+.segments .segment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.segment-item {
+    background-color: #ffffff;
+    padding: 2em 1em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-item .emoji {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.segments .tagline {
+    text-align: center;
+    margin-top: 1.5em;
+    font-style: italic;
+    color: var(--secondary);
+    font-size: 1.1em;
+}
+
+/* Galeria */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    padding: 0.8em;
+    font-size: 0.9em;
+    color: var(--dark);
+}
+
+/* Depoimentos */
+.testimonials .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    font-size: 0.95em;
+}
+
+.testimonial::before {
+    content: 'â€œ';
+    font-size: 3em;
+    color: var(--primary);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    line-height: 0.8;
+}
+
+.testimonial::after {
+    content: 'â€';
+    font-size: 3em;
+    color: var(--primary);
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    line-height: 0.8;
+}
+
+.testimonial .author {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    color: var(--secondary);
+    text-align: right;
+}
+
+/* Contato */
+.contact {
+    background-color: #ffffff;
+}
+
+.contact-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.contact-info {
+    flex: 1 1 300px;
+}
+
+.contact-info h2 {
+    color: var(--primary);
+    margin-bottom: 0.5em;
+}
+
+.contact-info ul {
+    list-style: none;
+    margin-bottom: 1em;
+    font-size: 0.95em;
+}
+
+.contact-info ul li {
+    margin-bottom: 0.5em;
+}
+
+.contact-info .cta-warning {
+    margin-top: 1em;
+    font-weight: 600;
+    color: #e65c00;
+    font-size: 0.95em;
+}
+
+.contact-form-wrapper {
+    flex: 1 1 300px;
+    background-color: #f9fafb;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-wrapper h3 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: var(--secondary);
+}
+
+.contact-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.contact-form-wrapper label {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+    padding: 0.6em 0.8em;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-family: inherit;
+}
+
+.contact-form-wrapper textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form-wrapper .service-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    padding: 0.5em 0 1em;
+    font-size: 0.9em;
+}
+
+.contact-form-wrapper .service-options span {
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+.contact-form-wrapper .service-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: normal;
+}
+
+.contact-form-wrapper button {
+    align-self: flex-start;
+}
+
+/* RodapÃ© */
+.footer {
+    background-color: var(--dark);
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Responsividade padrÃ£o atÃ© 768px */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 0.9em;
+    }
+    .nav-bar nav ul {
+        gap: 0.5em;
+    }
+    .contact-flex {
+        flex-direction: column;
+    }
+    .contact-form-wrapper,
+    .contact-info {
+        flex: 1 1 100%;
+    }
+}
+
+/* Responsividade aprimorada para telas bem pequenas */
+@media (max-width: 600px) {
+    /* Torna as grades de serviÃ§os, segmentos, galeria e depoimentos em coluna Ãºnica */
+    .services-grid,
+    .segments .segment-grid,
+    .gallery-grid,
+    .testimonials .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    /* Ajusta o layout da navegaÃ§Ã£o para empilhar os itens */
+    .navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+    .navigation ul li {
+        width: 100%;
+    }
+    /* Ajusta tamanho de tÃ­tulos e textos no hero */
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    .hero p {
+        font-size: 0.85em;
+    }
+    /* Reduz o tamanho das tags de marcas para caber em telas menores */
+    .brand-list li {
+        flex: 0 1 45%;
+        font-size: 0.85em;
+    }
+    /* Ajusta os cartÃµes de serviÃ§os para terem margens menores */
+    .service-card {
+        padding: 1.2em;
+    }
+    /* Ajusta espaÃ§os no formulÃ¡rio */
+    .contact-form-wrapper {
+        padding: 1.5em;
+    }
+}
